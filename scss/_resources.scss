@@ -1,0 +1,37 @@
+$background: #1D2228;
+$textcolor1 : #fff;
+$textcolor2 : #FB8122;
+$textcolor3 : #000;
+$mobile-1 : 1100px;
+$mobile-2 : 700px;
+$mobile-3 : 500px;
+$mobile-4 : 360px;
+
+@mixin flex {
+ display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+@mixin mobile-1{
+  @media (max-width : $mobile-1){
+    @content;
+  }
+}
+@mixin mobile-2{
+  @media (max-width : $mobile-2){
+    @content;
+  }
+}
+@mixin mobile-3{
+  @media (max-width : $mobile-3){
+    @content;
+  }
+}
+@mixin mobile-4{
+  @media (max-width : $mobile-4){
+    @content;
+  }
+}

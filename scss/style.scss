@@ -1,0 +1,427 @@
+@import './default';
+@import './resources';
+
+/*------------------ NAVIGATION BAR----------------*/
+.nav {
+  padding: 0px 40px;
+  background: $textcolor1;
+  min-height: 10vh;
+  transition: height 1s ease-in-out;
+  overflow: hidden;
+  height: 0;
+  @include mobile-3 {
+    padding: 0 10px;
+  }
+  & .nav-menu {
+    @include flex;
+    @include mobile-1 {
+      & {
+        flex-direction: column;
+      }
+    }
+  }
+  & .logo {
+    width: 15%;
+    padding-top: 6px;
+    @include mobile-1 {
+      & {
+        width: 200px;
+      }
+    }
+    @include mobile-3 {
+      & {
+        width: 180px;
+      }
+    }
+    & .img1 {
+      width: 100%;
+    }
+  }
+  & .toggle-icon {
+    width: 90%;
+    position: absolute;
+    top: 0%;
+    cursor: pointer;
+    display: none;
+    @include mobile-1 {
+      & {
+        display: block;
+      }
+    }
+    & .menu-icon {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1.5rem 0;
+      @include mobile-3 {
+        padding: 1rem 0;
+      }
+      & .drop-icon {
+        width: 1.6rem;
+      }
+    }
+  }
+  & .nav-list {
+    padding: 15px 0;
+    @include mobile-1 {
+      & .nav-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+    }
+    & .list {
+      padding-left: 20px;
+      font-size: 19px;
+      color: $background;
+      text-decoration: none;
+      font-weight: 500;
+      @include mobile-1 {
+        padding-bottom: 10px;
+        padding-left: 0;
+      }
+      &:hover {
+        color: $textcolor2;
+      }
+    }
+  }
+}
+.collapse {
+  height: 30rem;
+}
+/*------------------ NAVIGATION BAR ENDS----------------*/
+
+/*------------------ HERO SECTION----------------*/
+.hero {
+  height: 90vh;
+  overflow: hidden;
+  @include flex;
+  @include mobile-1 {
+    overflow: unset;
+    padding: 50px 0 0 0;
+    height: unset;
+  }
+  & .left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    @include mobile-1 {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    & .wrapper {
+      text-align: center;
+      color: $background;
+      @include mobile-2 {
+        padding: 0 20px;
+      }
+      & h3 {
+        font-size: 15px;
+        color: $textcolor2;
+        @include mobile-3 {
+          font-size: 12px;
+        }
+      }
+      & h1 {
+        font-size: 80px;
+        @include mobile-2 {
+          font-size: 60px;
+          padding: 20px 0;
+        }
+        @include mobile-3 {
+          font-size: 45px;
+        }
+      }
+      & button {
+        background: $textcolor2;
+        color: $textcolor1;
+        border: none;
+        padding: 10px 25px;
+        &:hover {
+          cursor: pointer;
+          background: $background;
+        }
+      }
+    }
+  }
+  & .right {
+    width: 50%;
+    background: $textcolor2;
+    @include mobile-1 {
+      width: 100%;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+/*------------------ HERO SECTION ENDS----------------*/
+
+/*------------------ ABOUT SECTION----------------*/
+.about {
+  background: $background;
+  padding: 100px 50px;
+  color: $textcolor1;
+  @include mobile-1 {
+    padding: 100px 20px;
+  }
+  & .top {
+    width: 70%;
+    padding-bottom: 30px;
+    @include mobile-1 {
+      width: 100%;
+    }
+  }
+  & .wrapper {
+    @include flex;
+    & .left {
+      width: 45%;
+      @include mobile-1 {
+        width: 100%;
+        padding-bottom: 40px;
+      }
+      & p {
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+      }
+      & div {
+        margin-bottom: 20px;
+        & h2 {
+          padding-bottom: 10px;
+        }
+        & li {
+          padding-bottom: 5px;
+        }
+      }
+    }
+    & .right {
+      width: 40%;
+      padding: 0 20px;
+      @include mobile-1 {
+        width: 100%;
+        padding: 0;
+      }
+      & p {
+        font-size: 15px;
+        padding-bottom: 5px;
+      }
+      & .line {
+        height: 5px;
+        width: 100%;
+        background: $textcolor2;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+/*------------------ ABOUT SECTION ENDS----------------*/
+
+/*------------------ SERVICES SECTION----------------*/
+.services {
+  background: #1d2228f3;
+  padding: 100px 50px;
+  color: $textcolor1;
+  @include mobile-2 {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  & .top {
+    & h1 {
+      font-size: 40px;
+      font-weight: 400;
+      padding-bottom: 40px;
+    }
+  }
+  & .wrapper {
+    @include flex;
+    @include mobile-1 {
+      justify-content: space-evenly;
+    }
+    & div {
+      width: 30%;
+      text-align: center;
+      border: 1px solid $textcolor2;
+      padding: 50px 10px;
+      @include mobile-1 {
+        width: 48%;
+        margin-bottom: 30px;
+      }
+      @include mobile-2 {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      & h1 {
+        font-weight: 300;
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+/*------------------ SERVICES SECTION ends----------------*/
+
+/*------------------ Portfolio SECTION----------------*/
+.portfolio {
+  background: $background;
+  padding: 100px 30px;
+  @include mobile-3 {
+    padding: 100px 20px;
+  }
+  & .top {
+    & h1 {
+      font-size: 40px;
+      font-weight: 400;
+      padding-bottom: 40px;
+      color: $textcolor1;
+    }
+  }
+  & .wrapper {
+    @include flex;
+
+    & .card {
+      width: 32%;
+      height: 300px;
+      background-size: cover;
+      margin-bottom: 2%;
+      display: flex;
+      align-items: flex-end;
+      &:hover {
+        cursor: pointer;
+        & .cover {
+          display: block;
+        }
+      }
+      & .cover {
+        text-align: center;
+        width: 100%;
+        background: $textcolor2;
+        height: 50%;
+        color: $textcolor1;
+        display: none;
+        & h1 {
+          padding: 10px 0;
+          font-weight: 500;
+        }
+        & .icons {
+          width: 100%;
+          padding-bottom: 10px;
+          & img {
+            width: 20px;
+            padding-right: 5px;
+          }
+        }
+        & button {
+          background: $background;
+          color: $textcolor1;
+          border: none;
+          padding: 10px 25px;
+          &:hover {
+            cursor: pointer;
+            background: $textcolor2;
+            color: $background;
+            border: 1px solid $background;
+          }
+        }
+        @include mobile-3 {
+          display: block;
+          height: 40%;
+        }
+      }
+      @include mobile-1 {
+        width: 49%;
+      }
+      @include mobile-2 {
+        width: 100%;
+        margin-bottom: 30px;
+        height: 400px;
+      }
+    }
+    & .main1 {
+      background-image: url('../image/kyma.netlify.app_.png');
+    }
+    & .main2 {
+      background-image: url('../image/zogin.netlify.app_.png');
+    }
+    & .main3 {
+      background-image: url('../image/advertit.netlify.app_.png');
+    }
+    & .main4 {
+      background-image: url('../image/salvationhope.netlify.app_.png');
+    }
+    & .main5 {
+      background-image: url('../image/www.tiyansmall.com.ng_.png');
+    }
+    & .main6 {
+      background-image: url('../image/venue2.netlify.app_.png');
+    }
+    & .main7 {
+      background-image: url('../image/osasdev.netlify.app_.png');
+    }
+    & .main8 {
+      background-image: url('../image/restndeat.netlify.app_.png');
+    }
+    & .main9 {
+      background-image: url('../image/vacationroom.netlify.app_.png');
+    }
+  }
+}
+/*------------------ Portfolio SECTION ENDS----------------*/
+
+/*------------------ CONTACT SECTION----------------*/
+.contact {
+  background: #1d2228f3;
+  padding: 100px 50px;
+  @include mobile-2 {
+    padding: 100px 20px;
+  }
+  & h1 {
+    font-size: 40px;
+    color: $textcolor1;
+    font-weight: 500;
+    padding-bottom: 30px;
+    @include mobile-3 {
+      font-size: 30px;
+    }
+    & > span {
+      color: $textcolor2;
+    }
+  }
+  & .wrapper {
+    @include flex;
+    & a {
+      @include flex;
+      width: 20%;
+      border: 1px solid $textcolor2;
+      padding: 40px;
+      text-decoration: none;
+      color: $textcolor1;
+      @include mobile-1 {
+        width: 45%;
+        margin-bottom: 30px;
+      }
+      @include mobile-2 {
+        width: 100%;
+      }
+      & img {
+        width: 20px;
+      }
+    }
+  }
+}
+/*------------------ CONTACT SECTION ENDS----------------*/
+/*------------------ FOOTER SECTION----------------*/
+footer {
+  @include flex;
+  align-items: center;
+  padding: 0 20px;
+  & img {
+    width: 200px;
+  }
+}
+
+/*------------------ Footer SECTION Ends----------------*/
