@@ -49,7 +49,7 @@
     display: none;
     @include mobile-1 {
       & {
-        display: block;
+        display: initial;
       }
     }
     & .menu-icon {
