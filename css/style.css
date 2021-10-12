@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
   scroll-behavior: smooth;
 }
@@ -38,21 +38,21 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media (max-width: 1100px) {
   .nav .nav-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -96,8 +96,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   padding: 1.5rem 0;
 }
 
@@ -125,11 +125,11 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
   }
 }
@@ -137,7 +137,7 @@
 .nav .nav-list .list {
   padding-left: 20px;
   font-size: 19px;
-  color: #1D2228;
+  color: #1d2228;
   text-decoration: none;
   font-weight: 500;
 }
@@ -150,7 +150,7 @@
 }
 
 .nav .nav-list .list:hover {
-  color: #FB8122;
+  color: #fb8122;
 }
 
 .collapse {
@@ -181,13 +181,13 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media (max-width: 1100px) {
@@ -204,13 +204,13 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 @media (max-width: 1100px) {
@@ -222,7 +222,7 @@
 
 .hero .left .wrapper {
   text-align: center;
-  color: #1D2228;
+  color: #1d2228;
 }
 
 @media (max-width: 700px) {
@@ -233,7 +233,7 @@
 
 .hero .left .wrapper h3 {
   font-size: 15px;
-  color: #FB8122;
+  color: #fb8122;
 }
 
 @media (max-width: 500px) {
@@ -260,7 +260,7 @@
 }
 
 .hero .left .wrapper button {
-  background: #FB8122;
+  background: #fb8122;
   color: #fff;
   border: none;
   padding: 10px 25px;
@@ -268,12 +268,12 @@
 
 .hero .left .wrapper button:hover {
   cursor: pointer;
-  background: #1D2228;
+  background: #1d2228;
 }
 
 .hero .right {
   width: 50%;
-  background: #FB8122;
+  background: #fb8122;
 }
 
 @media (max-width: 1100px) {
@@ -290,7 +290,7 @@
 /*------------------ HERO SECTION ENDS----------------*/
 /*------------------ ABOUT SECTION----------------*/
 .about {
-  background: #1D2228;
+  background: #1d2228;
   padding: 100px 50px;
   color: #fff;
 }
@@ -318,13 +318,13 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .about .wrapper .left {
@@ -377,7 +377,7 @@
 .about .wrapper .right .line {
   height: 5px;
   width: 100%;
-  background: #FB8122;
+  background: #fb8122;
   border-radius: 20px;
   margin-bottom: 20px;
 }
@@ -409,27 +409,27 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media (max-width: 1100px) {
   .services .wrapper {
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
 }
 
 .services .wrapper div {
   width: 30%;
   text-align: center;
-  border: 1px solid #FB8122;
+  border: 1px solid #fb8122;
   padding: 50px 10px;
 }
 
@@ -456,7 +456,7 @@
 /*------------------ SERVICES SECTION ends----------------*/
 /*------------------ Portfolio SECTION----------------*/
 .portfolio {
-  background: #1D2228;
+  background: #1d2228;
   padding: 100px 30px;
 }
 
@@ -479,13 +479,13 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .portfolio .wrapper .card {
@@ -497,8 +497,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .portfolio .wrapper .card:hover {
@@ -512,7 +512,7 @@
 .portfolio .wrapper .card .cover {
   text-align: center;
   width: 100%;
-  background: #FB8122;
+  background: #fb8122;
   height: 50%;
   color: #fff;
   display: none;
@@ -534,7 +534,7 @@
 }
 
 .portfolio .wrapper .card .cover button {
-  background: #1D2228;
+  background: #1d2228;
   color: #fff;
   border: none;
   padding: 10px 25px;
@@ -542,9 +542,9 @@
 
 .portfolio .wrapper .card .cover button:hover {
   cursor: pointer;
-  background: #FB8122;
-  color: #1D2228;
-  border: 1px solid #1D2228;
+  background: #fb8122;
+  color: #1d2228;
+  border: 1px solid #1d2228;
 }
 
 @media (max-width: 500px) {
@@ -569,39 +569,42 @@
 }
 
 .portfolio .wrapper .main1 {
-  background-image: url("../image/kyma.netlify.app_.png");
+  background-image: url('../image/kyma.netlify.app_.png');
 }
 
 .portfolio .wrapper .main2 {
-  background-image: url("../image/zogin.netlify.app_.png");
+  background-image: url('../image/zogin.netlify.app_.png');
 }
 
 .portfolio .wrapper .main3 {
-  background-image: url("../image/advertit.netlify.app_.png");
+  background-image: url('../image/advertit.netlify.app_.png');
 }
 
 .portfolio .wrapper .main4 {
-  background-image: url("../image/salvationhope.netlify.app_.png");
+  background-image: url('../image/salvationhope.netlify.app_.png');
 }
 
 .portfolio .wrapper .main5 {
-  background-image: url("../image/www.tiyansmall.com.ng_.png");
+  background-image: url('../image/www.tiyansmall.com.ng_.png');
 }
 
 .portfolio .wrapper .main6 {
-  background-image: url("../image/venue2.netlify.app_.png");
+  background-image: url('../image/venue2.netlify.app_.png');
 }
 
 .portfolio .wrapper .main7 {
-  background-image: url("../image/osasdev.netlify.app_.png");
+  background-image: url('../image/osasdev.netlify.app_.png');
 }
 
 .portfolio .wrapper .main8 {
-  background-image: url("../image/restndeat.netlify.app_.png");
+  background-image: url('../image/restndeat.netlify.app_.png');
 }
 
 .portfolio .wrapper .main9 {
-  background-image: url("../image/vacationroom.netlify.app_.png");
+  background-image: url('../image/vacationroom.netlify.app_.png');
+}
+.portfolio .wrapper .main10 {
+  background-image: url('../image/junkhut.netlify.app_.png');
 }
 
 /*------------------ Portfolio SECTION ENDS----------------*/
@@ -631,7 +634,7 @@
 }
 
 .contact h1 > span {
-  color: #FB8122;
+  color: #fb8122;
 }
 
 .contact .wrapper {
@@ -640,13 +643,13 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .contact .wrapper a {
@@ -655,15 +658,15 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 20%;
-  border: 1px solid #FB8122;
+  border: 1px solid #fb8122;
   padding: 40px;
   text-decoration: none;
   color: #fff;
@@ -694,16 +697,16 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 20px;
 }
 
