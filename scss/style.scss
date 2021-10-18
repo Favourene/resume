@@ -62,7 +62,7 @@
       & .drop-icon {
         font-size: 30px;
       }
-      & .times{
+      & .times {
         display: none;
       }
     }
@@ -99,10 +99,10 @@
     height: 90vh;
   }
 }
-.show{
+.show {
   display: block !important;
 }
-.hide{
+.hide {
   display: none !important;
 }
 /*------------------ NAVIGATION BAR ENDS----------------*/
@@ -384,6 +384,12 @@
     }
     & .main9 {
       background-image: url('../image/vacationroom.netlify.app_.png');
+    }
+     & .main10 {
+      background-image: url('../image/junkhut.netlify.app_.png');
+    }
+    & .main11 {
+      background-image: url('../image/uniedu.netlify.app_.png');
     }
   }
 }
