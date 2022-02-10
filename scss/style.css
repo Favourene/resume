@@ -13,7 +13,7 @@
   position: fixed;
   padding: 0px 40px;
   background: #fff;
-  min-height: 10vh;
+  min-height: 8vh;
   -webkit-transition: height 1s ease-in-out;
   transition: height 1s ease-in-out;
   overflow: hidden;
