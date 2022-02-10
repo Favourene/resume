@@ -16,6 +16,9 @@
   @include mobile-3 {
     padding: 0 10px;
   }
+  @include mobile-5{
+  min-height: 7vh;
+  }
   & .nav-menu {
     @include flex;
     @include mobile-1 {

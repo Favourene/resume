@@ -32,6 +32,12 @@
   }
 }
 
+@media (min-height: 650px) {
+  .nav {
+    min-height: 7vh;
+  }
+}
+
 .nav .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
