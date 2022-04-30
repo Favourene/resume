@@ -16,8 +16,8 @@
   @include mobile-3 {
     padding: 0 10px;
   }
-  @include mobile-5{
-  min-height: 7vh;
+  @include mobile-5 {
+    min-height: 7vh;
   }
   & .nav-menu {
     @include flex;
@@ -383,7 +383,7 @@
       background-image: url('../image/osasdev.netlify.app_.png');
     }
     & .main8 {
-      background-image: url('../image/restndeat.netlify.app_.png');
+      background-image: url('../image/ounjebazaar.netlify.app_.png');
     }
     & .main9 {
       background-image: url('../image/vacationroom.netlify.app_.png');
