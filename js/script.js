@@ -7,14 +7,14 @@ const times = document.getElementsByClassName('times')[0]
 
 bars.onclick = function () {
   'use strict'
-  nav.classList.toggle('collapse');
-   times.classList.add('show')
-  bars.classList.add('hide');
+  nav.classList.toggle('collapse')
+  times.classList.add('show')
+  bars.classList.add('hide')
 }
 times.onclick = function () {
   'use strict'
   nav.classList.toggle('collapse')
-   times.classList.remove('show')
+  times.classList.remove('show')
   bars.classList.remove('hide')
-
 }
+AOS.init()

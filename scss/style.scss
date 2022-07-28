@@ -1,15 +1,20 @@
 @import './default';
 @import './resources';
+body {
+  // overflow-x: hidden;
+}
 
 /*------------------ NAVIGATION BAR----------------*/
 .nav {
   position: fixed;
   padding: 0px 40px;
-  background: $textcolor1;
-  min-height: 8vh;
+  background: #fffcfa;
+  min-height: 9vh;
   transition: height 1s ease-in-out;
   overflow: hidden;
   height: 0;
+  z-index: 1000;
+  width: 100%;
   @include mobile-1 {
     width: 100%;
   }
@@ -85,7 +90,7 @@
       font-size: 19px;
       color: $background;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 400;
       @include mobile-1 {
         padding-bottom: 50px;
         padding-left: 0;
@@ -136,15 +141,34 @@
       @include mobile-2 {
         padding: 0 20px;
       }
-      & h3 {
+      & .tag {
         font-size: 15px;
+        clip-path: polygon(
+          0% 15%,
+          0 0,
+          15% 0%,
+          85% 0%,
+          100% 0,
+          100% 15%,
+          100% 85%,
+          100% 100%,
+          85% 100%,
+          15% 100%,
+          0 100%,
+          0% 85%
+        );
+        transform: translateY(100px);
+        opacity: 0;
         color: $textcolor2;
         @include mobile-3 {
           font-size: 12px;
         }
       }
-      & h1 {
+      & .big {
         font-size: 80px;
+        clip-path: polygon(100% 67%, 100% 100%, 100% 100%, 100% 42%);
+        transform: translateY(100px);
+        opacity: 0;
         @include mobile-2 {
           font-size: 60px;
           padding: 20px 0;
@@ -166,14 +190,17 @@
     }
   }
   & .right {
-    width: 50%;
-    background: $textcolor2;
+    width: 55%;
+    display: flex;
+    align-items: center;
     @include mobile-1 {
       width: 100%;
     }
-    & img {
+    & .sty {
       width: 100%;
-      height: 100%;
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+      transform: translateY(100px);
+      opacity: 0;
     }
   }
 }
@@ -182,25 +209,35 @@
 /*------------------ ABOUT SECTION----------------*/
 .about {
   background: $background;
-  padding: 100px 50px;
+  padding: 50px 30px 0 30px;
   color: $textcolor1;
+  overflow-x: hidden;
   @include mobile-1 {
-    padding: 100px 20px;
+    padding: 50px 20px;
   }
-  & .top {
-    width: 70%;
-    padding-bottom: 30px;
-    @include mobile-1 {
-      width: 100%;
-    }
-  }
-  & .wrapper {
+  .about_wrapper {
     @include flex;
-    & .left {
-      width: 45%;
+    padding-bottom: 30px;
+    flex-wrap: wrap-reverse;
+    & .right_one {
+      width: 40%;
+      display: flex;
+      align-items: center;
       @include mobile-1 {
         width: 100%;
-        padding-bottom: 40px;
+      }
+      & img {
+        width: 100%;
+      }
+    }
+    & .top {
+      width: 55%;
+      @include mobile-1 {
+        width: 100%;
+        padding: 20px 0;
+      }
+      h1 {
+        padding-bottom: 20px;
       }
       & p {
         font-size: 14px;
@@ -209,32 +246,42 @@
         padding-bottom: 10px;
       }
       & div {
-        margin-bottom: 20px;
-        & h2 {
-          padding-bottom: 10px;
-        }
-        & li {
-          padding-bottom: 5px;
+        & button {
+          background: $textcolor2;
+          color: $textcolor1;
+          border: none;
+          padding: 10px 25px;
+          &:hover {
+            cursor: pointer;
+            background: $background;
+          }
         }
       }
     }
-    & .right {
-      width: 40%;
-      padding: 0 20px;
-      @include mobile-1 {
-        width: 100%;
-        padding: 0;
+  }
+  & .wrapper {
+    padding-top: 40px;
+    .top {
+      text-align: center;
+      h2 {
+        font-size: 40px;
       }
-      & p {
-        font-size: 15px;
-        padding-bottom: 5px;
-      }
-      & .line {
-        height: 5px;
-        width: 100%;
-        background: $textcolor2;
-        border-radius: 20px;
-        margin-bottom: 20px;
+    }
+    .right_two {
+      @include flex;
+      .card {
+        width: 47%;
+        & p {
+          font-size: 15px;
+          padding-bottom: 5px;
+        }
+        & .line {
+          height: 5px;
+          width: 100%;
+          background: $textcolor2;
+          border-radius: 20px;
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -288,9 +335,9 @@
 /*------------------ Portfolio SECTION----------------*/
 .portfolio {
   background: $background;
-  padding: 100px 30px;
+  padding: 50px 30px;
   @include mobile-3 {
-    padding: 100px 20px;
+    padding: 50px 20px;
   }
   & .top {
     & h1 {
